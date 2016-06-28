@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp" >
+
+
+        <ImageButton
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/message"/>
+        <ImageButton
+            android:id="@+id/dial"
+            android:layout_toLeftOf="@id/message"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/dail"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_toLeftOf="@id/dial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="8dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
